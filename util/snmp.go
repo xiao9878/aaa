@@ -107,7 +107,7 @@ func parseData(l []string) (result map[int]string, err error) {
         idx := item - 1
         if idx < 0 {
             result = nil
-            err = errors.New("ids must more than zero")
+            err = errors.New("idx must more than zero")
             return
         }
         result[item] = l[idx]
